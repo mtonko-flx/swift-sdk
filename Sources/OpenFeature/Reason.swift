@@ -19,7 +19,7 @@ public enum Reason: String {
     case disabled = "DISABLED"
     /// The reason for the resolved value could not be determined.
     case unknown = "UNKNOWN"
-    /// The resolved value is non-authoritative or possible out of date
+    /// The resolved value is non-authoritative or possibly out of date.
     case stale = "STALE"
     /// The resolved value was the result of an error.
     case error = "ERROR"
