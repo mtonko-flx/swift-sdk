@@ -1,9 +1,5 @@
 import Foundation
 
-/// Predefined resolution reasons.
-///
-/// Raw values are fixed by the OpenFeature specification and are compared as strings by
-/// consumers, so they cannot be changed without breaking them.
 public enum Reason: String {
     /// The resolved value is static (no dynamic evaluation).
     case staticReason = "STATIC"

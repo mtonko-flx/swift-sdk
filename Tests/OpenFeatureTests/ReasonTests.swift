@@ -2,8 +2,6 @@ import Foundation
 import OpenFeature
 import XCTest
 
-/// Asserts the literal strings, because assertions elsewhere compare `details.reason` against
-/// `Reason.x.rawValue` and so pass for any value.
 final class ReasonTests: XCTestCase {
     func testReasonRawValuesMatchSpecification() {
         XCTAssertEqual(Reason.staticReason.rawValue, "STATIC")
