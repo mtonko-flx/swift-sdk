@@ -27,7 +27,7 @@ final class ProviderSpecTests: XCTestCase {
         let provider = NoOpProvider()
 
         let boolResult = try provider.getBooleanEvaluation(key: "key", defaultValue: false, context: MutableContext())
-        XCTAssertEqual(boolResult.reason, Reason.defaultReason.rawValue)
+        XCTAssertEqual(boolResult.reason, "DEFAULT")
     }
 
     func testNoErrorCodeByDefault() throws {
